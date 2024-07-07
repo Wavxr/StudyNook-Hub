@@ -2,8 +2,6 @@
 session_start();
 require('../middleware/admin_middleware.php');
 include('includes/header.php'); 
-
-
 ?>
 
 <div class="container">
@@ -20,7 +18,9 @@ include('includes/header.php');
                         ?>
                         <div class="card">
                             <div class="card-header">
-                                <h4>Edit Category</h4>
+                                <h4>Edit Category
+                                <a href="category.php" class="btn btn-primary float-end">Back</a>
+                                </h4>
                             </div>
                             <div class="card-body">
                                 <form action="code.php" method="POST" enctype="multipart/form-data">

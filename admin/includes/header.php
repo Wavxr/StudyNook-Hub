@@ -7,6 +7,8 @@
   <title>
     StudyHub Nook | PHP
   </title>
+  <script src="https://kit.fontawesome.com/8f0342e128.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Font Awesome Icons -->
@@ -28,4 +30,4 @@
 <body class="g-sidenav-show   bg-gray-100">
     <?php include('sidebar.php'); ?>
     <main class="main-content position-relative border-radius-lg ">
-        <?php include('navbar.php'); ?>
+    <?php include('navbar.php'); ?>

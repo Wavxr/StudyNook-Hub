@@ -1,0 +1,79 @@
+1. Productivity Software
+Name: Productivity Software
+Slug: productivity-software
+Description: Tools to enhance productivity, including office suites, note-taking applications, and task management software.
+Meta Title: Best Productivity Software for Students | StudyNook Hub
+Meta Description: Discover top productivity software for students, including office suites, note-taking apps, and task management tools at discounted prices.
+Meta Keywords: productivity software, office suites, note-taking apps, task management, student software
+
+2. Educational Software
+Name: Educational Software
+Slug: educational-software
+Description: Educational tools and platforms to support learning, including e-learning, language learning, and scientific simulations.
+Meta Title: Top Educational Software for Students | StudyNook Hub
+Meta Description: Explore the best educational software for students, featuring e-learning platforms, language learning tools, and science simulations at affordable prices.
+Meta Keywords: educational software, e-learning, language learning, science simulations, student software
+
+3. Development Tools
+Name: Development Tools
+Slug: development-tools
+Description: Essential tools for software development, including IDEs, version control systems, and database management software.
+Meta Title: Essential Development Tools for Students | StudyNook Hub
+Meta Description: Find top development tools for students, including IDEs, version control systems, and database management software at discounted prices.
+Meta Keywords: development tools, IDEs, version control, database management, student software
+
+4. Design and Multimedia
+Name: Design and Multimedia
+Slug: design-multimedia
+Description: Creative software for graphic design, video editing, and 3D modeling to enhance multimedia projects.
+Meta Title: Creative Design and Multimedia Software for Students | StudyNook Hub
+Meta Description: Discover top design and multimedia software for students, including graphic design, video editing, and 3D modeling tools at affordable prices.
+Meta Keywords: design software, multimedia software, graphic design, video editing, 3D modeling, student software
+
+5. Security and Antivirus
+Name: Security and Antivirus
+Slug: security-antivirus
+Description: Software to protect your devices and data, including antivirus programs, VPNs, and encryption tools.
+Meta Title: Best Security and Antivirus Software for Students | StudyNook Hub
+Meta Description: Ensure your data and devices are secure with top security and antivirus software for students, featuring antivirus programs, VPNs, and encryption tools at discounted prices.
+Meta Keywords: security software, antivirus software, VPNs, encryption tools, student software
+
+6. Communication Tools
+Name: Communication Tools
+Slug: communication-tools
+Description: Tools to facilitate communication, including email clients, instant messaging apps, and video conferencing software.
+Meta Title: Top Communication Tools for Students | StudyNook Hub
+Meta Description: Enhance your communication with the best tools for students, including email clients, instant messaging apps, and video conferencing software at affordable prices.
+Meta Keywords: communication tools, email clients, instant messaging, video conferencing, student software
+
+7. Utilities
+Name: Utilities
+Slug: utilities
+Description: Useful software for system optimization, file compression, and backup solutions to keep your devices running smoothly.
+Meta Title: Essential Utilities Software for Students | StudyNook Hub
+Meta Description: Discover essential utilities software for students, including system optimization, file compression, and backup solutions at discounted prices.
+Meta Keywords: utilities software, system optimization, file compression, backup solutions, student software
+
+8. Web Development
+Name: Web Development
+Slug: web-development
+Description: Software for building and managing websites, including web design tools, content management systems, and development frameworks.
+Meta Title: Best Web Development Software for Students | StudyNook Hub
+Meta Description: Find top web development software for students, featuring web design tools, content management systems, and development frameworks at affordable prices.
+Meta Keywords: web development software, web design, content management systems, development frameworks, student software
+
+9. Data Analysis and Visualization
+Name: Data Analysis and Visualization
+Slug: data-analysis-visualization
+Description: Tools for analyzing and visualizing data, including statistical software and data visualization platforms.
+Meta Title: Top Data Analysis and Visualization Software for Students | StudyNook Hub
+Meta Description: Discover the best data analysis and visualization software for students, featuring statistical software and data visualization platforms at discounted prices.
+Meta Keywords: data analysis software, data visualization, statistical software, student software
+
+10. Creative Software
+Name: Creative Software
+Slug: creative-software
+Description: Software for creative projects, including music production, animation, and photo editing tools.
+Meta Title: Best Creative Software for Students | StudyNook Hub
+Meta Description: Explore top creative software for students, including music production, animation, and photo editing tools at affordable prices.
+Meta Keywords: creative software, music production, animation, photo editing, student software
