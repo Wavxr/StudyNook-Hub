@@ -1,3 +1,8 @@
+<?php
+  $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], '/') + 1);
+
+?>
+
 <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3" id="sidenav-main">
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -9,6 +14,7 @@
   <div class=" w-auto max-height-vh-100" id="sidenav-collapse-main">
     <ul class="navbar-nav">
       <li class="nav-item">
+
         <a class="nav-link active" href="./pages/dashboard.html">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fas fa-tv text-primary text-sm opacity-10"></i>
@@ -18,7 +24,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="category.php">
+        <a class="nav-link <?= $page == "category.php"? 'active bg-gradient-secondary':'';?>" href="category.php">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fas fa-th-list text-warning text-sm opacity-10"></i>
           </div>
@@ -27,7 +33,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="add-category.php">
+        <a class="nav-link <?= $page == "add-category.php"? 'active bg-gradient-secondary':'';?>"  href="add-category.php">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fas fa-plus-circle text-warning text-sm opacity-10"></i>
           </div>
@@ -36,7 +42,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="products.php">
+        <a class="nav-link <?= $page == "products.php"? 'active bg-gradient-secondary':'';?>"   href="products.php">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fas fa-boxes text-warning text-sm opacity-10"></i>
           </div>
@@ -45,7 +51,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="add-product.php">
+        <a class="nav-link <?= $page == "add-product.php"? 'active bg-gradient-secondary':'';?>"  href="add-product.php">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fas fa-plus text-warning text-sm opacity-10"></i>
           </div>
