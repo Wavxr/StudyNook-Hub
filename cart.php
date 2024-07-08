@@ -26,33 +26,35 @@ include('middleware/authenticate.php');
                                 <h5>Action</h5>
                             </div>
                         </div>
-                        <hr>
-                    <?php 
-                        $items = getCartItems();
-                        foreach($items as $citem) {
-                        ?>
-                            <div class="row align-items-center mt-1 mb-1 text-center">
-                                <div class="col-md-2">
-                                    <img src="uploads/<?= $citem['image'] ?>" alt="Product Image" class="w-100">
-                                </div>
-                                <div class="col-md-3">
-                                    <h5><?= $citem['name'] ?></h5>
-                                </div>
-                                <div class="col-md-3">
-                                    <h5>₱<?= $citem['selling_price'] ?></h5>
-                                </div>
-                                <div class="col-md-2">
-                                    <h5><?= $citem['prod_qty']?></h5>
-                                </div>
-                                <div class="col-md-2">
-                                    <button class="btn btn-danger"><i class="fa fa-trash me-2"></i>Remove</button>
-                                </div>
-                                
-                            </div>
+                        <div id="mycart">
                             <hr>
-                        <?php
-                        }
-                    ?>
+                        <?php 
+                            $items = getCartItems();
+                            foreach($items as $citem) {
+                            ?>
+                                <div class="row align-items-center mt-1 mb-1 text-center">
+                                    <div class="col-md-2">
+                                        <img src="uploads/<?= $citem['image'] ?>" alt="Product Image" class="w-100">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5><?= $citem['name'] ?></h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>₱<?= $citem['selling_price'] ?></h5>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <h5><?= $citem['prod_qty']?></h5>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-danger deleteItem" value="<?= $citem['cid'];?>"><i class="fa fa-trash me-2"></i>Remove</button>
+                                    </div>
+                                    
+                                </div>
+                                <hr>
+                            <?php
+                            }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -49,5 +49,46 @@ $(document).ready(function() {
           }
       });
     });
-  });
-  
+
+    $(document).on('click', '.deleteItem', function () {
+        var cart_id = $(this).val();
+        console.log("Cart ID:", cart_id); // Debugging statement
+    
+        $.ajax({
+            method: "POST",
+            url: "functions/handlecart.php",
+            data: {
+                "cart_id": cart_id,
+                "scope": "delete"
+            },
+            dataType: "json",
+            success: function (response) {
+                console.log("Response:", response); // Debugging statement
+                if(response == 200) {
+                    swal({
+                        title: 'Success',
+                        text: 'Item Deleted or Removed from Cart',
+                        icon: 'success'
+                    });
+                    $('#mycart').load(location.href + " #mycart");
+                } else {
+                    swal({
+                        title: 'Error',
+                        text: 'Something Went Wrong',
+                        icon: 'error'
+                    });
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error); // Debugging statement
+                console.error("Response Text:", xhr.responseText); // Debugging statement
+                swal({
+                    title: 'Error',
+                    text: 'Ajax request failed: ' + xhr.responseText,
+                    icon: 'error'
+                });
+            }
+        });
+    });
+
+});  
