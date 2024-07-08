@@ -20,7 +20,7 @@ include('includes/header.php');
                                 {
                                     ?>
                                         <div class="col-md-3 mb-2 ">
-                                            <a href="products.php?category=<?= $item['slug']; ?>">
+                                            <a href="products.php?category=<?= $item['slug']; ?>" class="text-decoration-none">
                                                 <div class="card shadow h-100">
                                                     <div class="card-body">
                                                         <h4 class="text-center"><?= $item['name']; ?></h4>

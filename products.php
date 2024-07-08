@@ -27,7 +27,7 @@ if(isset($_GET['category']))
                                         {
                                             ?>
                                                 <div class="col-md-3 mb-2 ">
-                                                    <a href="#" class="text-decoration-none">
+                                                    <a href="view-product.php?product=<?= $item['slug']; ?>" class="text-decoration-none">
                                                         <div class="card shadow h-100">
                                                             <div class="card-body">
                                                                 <img src="uploads/<?= $item['image']; ?>" alt="<?= $item['name']; ?>" class="w-100">
@@ -57,5 +57,9 @@ if(isset($_GET['category']))
     {
         redirect('categories.php', 'Invalid Category');
     }
+}
+else
+{
+    redirect('categories.php', 'Invalid Category');
 }
 include('includes/footer.php'); ?>
