@@ -20,12 +20,14 @@ include('includes/header.php');
                                 {
                                     ?>
                                         <div class="col-md-3 mb-2 ">
-                                            <div class="card shadow h-100">
-                                                <div class="card-body">
-                                                    <h4 class="text-center"><?= $item['name']; ?></h4>
-                                                    <img src="uploads/<?= $item['image']; ?>" alt="<?= $item['name']; ?>" class="w-100">
+                                            <a href="products.php?category=<?= $item['slug']; ?>">
+                                                <div class="card shadow h-100">
+                                                    <div class="card-body">
+                                                        <h4 class="text-center"><?= $item['name']; ?></h4>
+                                                        <img src="uploads/<?= $item['image']; ?>" alt="<?= $item['name']; ?>" class="w-100">
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </a>                            
                                         </div>
                                     <?php
                                 }
