@@ -1,7 +1,9 @@
 <?php 
 include('functions/userfunctions.php');
-include('includes/header.php'); ?>
+include('includes/header.php'); 
+include('middleware/authenticate.php'); 
 
+?>
 <div class="py-5">
     <div class="container">
         <div class="card card-body shadow">
@@ -40,7 +42,7 @@ include('includes/header.php'); ?>
                                     <h5>₱<?= $citem['selling_price'] ?></h5>
                                 </div>
                                 <div class="col-md-2">
-                                    <input type="text" class="form-control text-center input-qty bg-white" value="<?= $citem['prod_qty']?>" >
+                                    <h5><?= $citem['prod_qty']?></h5>
                                 </div>
                                 <div class="col-md-2">
                                     <button class="btn btn-danger"><i class="fa fa-trash me-2"></i>Remove</button>
