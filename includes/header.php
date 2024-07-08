@@ -7,8 +7,8 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
     <script src="https://kit.fontawesome.com/8f0342e128.js" defer crossorigin="anonymous"></script>
-    <!-- Alertify -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <?php include('navbar.php'); ?>

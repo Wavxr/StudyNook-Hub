@@ -21,7 +21,7 @@ if(isset($_GET['product']))
                         <h5 class="text-center mt-3">Description</h5>
                         <p><?= $product['description'];?></p>
                     </div>
-                    <div class="card shadow col-md-4">
+                    <div class="card col-md-4">
                         <div class="card-body">
                             <h2 class="fw-bold text-dark"><?= $product['name']; ?></h2>
                             <br>

@@ -15,14 +15,37 @@ $(document).ready(function() {
           dataType: "json",
           success: function (response) {
               if(response == 201) {
-                  alertify.success("Product Added to Cart");
-              } else if(response == "exists") {
-                  alertify.error("Product Already in Cart"); 
+                  swal({
+                      title: 'Success',
+                      text: 'Product Added to Cart',
+                      icon: 'success'
+                  });
               } else if(response == 401) {
-                  alertify.error("Please login to add product to cart");
+                  swal({
+                      title: 'Login Required',
+                      text: 'Please login to add product to cart',
+                      icon: 'warning'
+                  });
               } else if(response == 500) {
-                  alertify.error("Something Went Wrong");
+                  swal({
+                      title: 'Error',
+                      text: 'Something Went Wrong',
+                      icon: 'error'
+                  });
+              } else if(response == 'exists') {
+                  swal({
+                      title: 'Info',
+                      text: 'Product already in cart',
+                      icon: 'info'
+                  });
               }
+          },
+          error: function (xhr, status, error) {
+              swal({
+                  title: 'Error',
+                  text: 'Ajax request failed',
+                  icon: 'error'
+              });
           }
       });
     });
