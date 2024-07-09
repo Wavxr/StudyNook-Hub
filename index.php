@@ -13,8 +13,6 @@ include('includes/header.php'); ?>
                         </div>
                     <?php unset($_SESSION['message']); } ?>
 
-                    <h1>Hello, world!</h1>
-                    <button class="btn btn-primary">testing</button>
                 </div>
             </div>
     </div>

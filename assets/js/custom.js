@@ -127,7 +127,7 @@ $(document).ready(function() {
                             }).then(() => {
                                 location.reload();
                             });
-                        }, 3000);
+                        }, 1500);
                     });
                 } else if(response == 401) {
                     swal({
