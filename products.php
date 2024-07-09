@@ -35,7 +35,7 @@ if(isset($_GET['category']))
                                                                 <img src="uploads/<?= $item['image']; ?>" alt="<?= $item['name']; ?>" class="w-100">
                                                                 <h4 class="text-center"><?= $item['name']; ?></h4>
                                                                 <p class="text-center"><?= $item['small_description']; ?></p>
-                                                                <h5 class="text-center">P<?= $item['selling_price']; ?></h>
+                                                                <h5 class="text-center">₱<?= $item['selling_price']; ?></h>
                                                             </div>
                                                         </div>
                                                     </a>                            
