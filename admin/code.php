@@ -131,17 +131,17 @@ include('../functions/myfunctions.php');
     }
     else if(isset($_POST['add_product_btn'])) 
     {
-        $category_id = $_POST['category_id'];
-        $name = $_POST['name'];
-        $slug = $_POST['slug'];
-        $small_description = $_POST['small_description'];
-        $description = $_POST['description'];
-        $original_price = $_POST['original_price'];
-        $selling_price = $_POST['selling_price'];
-        $qty = $_POST['qty'];
-        $meta_title = $_POST['meta_title'];
-        $meta_description = $_POST['meta_description'];
-        $meta_keywords = $_POST['meta_keywords'];
+        $category_id = mysqli_real_escape_string($con, $_POST['category_id']);
+        $name = mysqli_real_escape_string($con, $_POST['name']);
+        $slug = mysqli_real_escape_string($con, $_POST['slug']);
+        $small_description = mysqli_real_escape_string($con, $_POST['small_description']);
+        $description = mysqli_real_escape_string($con, $_POST['description']);
+        $original_price = mysqli_real_escape_string($con, $_POST['original_price']);
+        $selling_price = mysqli_real_escape_string($con, $_POST['selling_price']);
+        $qty = mysqli_real_escape_string($con, $_POST['qty']);
+        $meta_title = mysqli_real_escape_string($con, $_POST['meta_title']);
+        $meta_description = mysqli_real_escape_string($con, $_POST['meta_description']);
+        $meta_keywords = mysqli_real_escape_string($con, $_POST['meta_keywords']);
         $status = isset($_POST['status']) ? '1' : '0';
         $trending = isset($_POST['trending']) ? '1' : '0';
 

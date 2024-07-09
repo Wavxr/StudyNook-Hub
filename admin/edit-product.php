@@ -92,15 +92,15 @@ include('includes/header.php');
                                         </div>
                                         <div class="col-md-12">
                                             <label for="">Meta Title</label>
-                                            <input required type="text" value="<?= $data['meta_title'] ?>" name="meta_title" placeholder="Enter Meta Title" class="form-control">
+                                            <input type="text" value="<?= $data['meta_title'] ?>" name="meta_title" placeholder="Enter Meta Title" class="form-control">
                                         </div>
                                         <div class="col-md-12">
                                             <label for="">Meta Description</label>
-                                            <textarea required rows="3" name="meta_description" class="form-control" placeholder="Enter Meta Description"><?= $data['meta_description'] ?></textarea>
+                                            <textarea rows="3" name="meta_description" class="form-control" placeholder="Enter Meta Description"><?= $data['meta_description'] ?></textarea>
                                         </div>
                                         <div class="col-md-12">
                                             <label for="">Meta Keywords</label>
-                                            <textarea required rows="3"  name="meta_keywords" class="form-control" placeholder="Enter Meta Keywords"><?= $data['meta_keywords'] ?></textarea>
+                                            <textarea rows="3"  name="meta_keywords" class="form-control" placeholder="Enter Meta Keywords"><?= $data['meta_keywords'] ?></textarea>
                                         </div>
                                         <div class="col-md-12 mt-2">
                                             <button type="submit" name="update_product_btn" class="btn btn-primary">Update</button>

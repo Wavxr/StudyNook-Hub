@@ -65,27 +65,27 @@ include('includes/header.php');
                             </div>
                             <div class="col-md-6">
                                 <label for="">Quantity</label>
-                                <input required type="number" name="qty" placeholder="Enter Quantity" class="form-control">
+                                <input readonly type="number" value="1" name="qty" class="form-control">
                             </div>
                             <div class="col-md-3 mt-4">
                                 <label for="">Status</label>
-                                <input required type="checkbox" name="status">
+                                <input type="checkbox" name="status">
                             </div>
                             <div class="col-md-3 mt-4">
                                 <label for="">Trending</label>
-                                <input required type="checkbox" name="trending">
+                                <input type="checkbox" name="trending">
                             </div>
                             <div class="col-md-12">
                                 <label for="">Meta Title</label>
-                                <input required type="text" name="meta_title" placeholder="Enter Meta Title" class="form-control">
+                                <input type="text" name="meta_title" placeholder="Enter Meta Title" class="form-control">
                             </div>
                             <div class="col-md-12">
                                 <label for="">Meta Description</label>
-                                <textarea required rows="3" name="meta_description" class="form-control" placeholder="Enter Meta Description"></textarea>
+                                <textarea rows="3" name="meta_description" class="form-control" placeholder="Enter Meta Description"></textarea>
                             </div>
                             <div class="col-md-12">
                                 <label for="">Meta Keywords</label>
-                                <textarea required rows="3" name="meta_keywords" class="form-control" placeholder="Enter Meta Keywords"></textarea>
+                                <textarea rows="3" name="meta_keywords" class="form-control" placeholder="Enter Meta Keywords"></textarea>
                             </div>
                             <div class="col-md-12 mt-2">
                                 <button type="submit" name="add_product_btn" class="btn btn-primary">Add Product</button>
