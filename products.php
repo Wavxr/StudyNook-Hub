@@ -25,6 +25,8 @@ if(isset($_GET['category']))
                                     {
                                         foreach($products as $item)
                                         {
+                                            if($item['qty'] > 0)
+                                            {
                                             ?>
                                                 <div class="col-md-3 mb-2 ">
                                                     <a href="view-product.php?product=<?= $item['slug']; ?>" class="text-decoration-none">
@@ -39,6 +41,7 @@ if(isset($_GET['category']))
                                                     </a>                            
                                                 </div>
                                             <?php
+                                            }
                                         }
                                     }
                                     else
