@@ -31,7 +31,6 @@ if(isset($_GET['product']))
                             <h6 class="text-danger"><s>₱<?= $product['original_price']; ?></s></h6>
                             <div class="column mt-3">
                                 <button class="btn btn-warning px-4 mt-3 addToCardBtn" value="<?= $product['id'] ?>" style="width:100%"><i class="fa fa-shopping-cart me-2"></i>Add to Cart</button>
-                                <button class="btn btn-success px-4 mt-3 addToWishlistBtn" value="<?= $product['id'] ?>" style="width:100%"><i class="fa fa-heart me-2"></i>Add to Wishlist</button>
                             </div>
                         </div>
                     </div>

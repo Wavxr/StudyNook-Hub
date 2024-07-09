@@ -36,6 +36,14 @@ function getCartItems()
     return $query_run = mysqli_query($con, $query);
 }
 
+function clearCart($user_id) 
+{
+    global $con;
+    $query = "DELETE FROM carts WHERE user_id = '$user_id'";
+    return $query_run = mysqli_query($con, $query);
+}
+
+
 function redirect($url, $message) {
     $_SESSION['message'] = $message;
     header('Location: ' .$url);
