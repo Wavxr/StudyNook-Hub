@@ -11,6 +11,10 @@
     <script src="https://kit.fontawesome.com/8f0342e128.js" defer crossorigin="anonymous"></script>
     <!-- SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+
+
+
 
     <style>
         .card {

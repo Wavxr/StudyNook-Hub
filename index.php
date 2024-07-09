@@ -1,6 +1,7 @@
 <?php 
-include('includes/header.php'); 
 include('functions/userfunctions.php'); 
+include('includes/header.php'); 
+
 ?>
 
 <div class="container my-5">
