@@ -28,8 +28,17 @@ function redirect($url, $message) {
 function getOrderHistoryAndProfit() {
     global $con;
     $date = date('Y-m-d');
+    $weekAgo = date('Y-m-d', strtotime('-6 days'));
 
-    $query = "SELECT * FROM item_orders WHERE DATE(order_date) = '$date'";
+    // Create an array to store the profit for each day
+    $dailyProfit = [];
+    for ($i = 0; $i <= 6; $i++) {
+        $currentDate = date('Y-m-d', strtotime("-$i days"));
+        $dailyProfit[$currentDate] = 0;
+    }
+
+    // Query to fetch orders from the past week
+    $query = "SELECT * FROM item_orders WHERE DATE(order_date) BETWEEN '$weekAgo' AND '$date'";
     $result = mysqli_query($con, $query);
 
     $orderHistory = [];
@@ -37,9 +46,12 @@ function getOrderHistoryAndProfit() {
 
     while ($row = mysqli_fetch_assoc($result)) {
         $orderHistory[] = $row;
+        $orderDate = date('Y-m-d', strtotime($row['order_date']));
+        $dailyProfit[$orderDate] += $row['price'] * $row['prod_qty'];
         $totalProfit += $row['price'] * $row['prod_qty'];
     }
 
-    return ['orderHistory' => $orderHistory, 'totalProfit' => $totalProfit];
+    return ['orderHistory' => $orderHistory, 'totalProfit' => $totalProfit, 'dailyProfit' => $dailyProfit];
 }
+
 ?>

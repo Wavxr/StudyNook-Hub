@@ -7,7 +7,7 @@
   <title>
     StudyHub Nook | PHP
   </title>
-  <script src="https://kit.fontawesome.com/8f0342e128.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8f0342e128.js" defer crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
