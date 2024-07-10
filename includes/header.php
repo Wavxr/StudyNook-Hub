@@ -17,6 +17,9 @@
 
 
     <style>
+        .hidden {
+            display: none;
+        }
         .card {
             height: 100%;
         }

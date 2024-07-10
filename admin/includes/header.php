@@ -30,4 +30,3 @@
 <body class="g-sidenav-show   bg-gray-100">
     <?php include('sidebar.php'); ?>
     <main class="main-content position-relative border-radius-lg ">
-    <?php include('navbar.php'); ?>

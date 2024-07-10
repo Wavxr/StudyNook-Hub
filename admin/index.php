@@ -46,14 +46,14 @@ $dailyProfit = $orderData['dailyProfit'];
                     </div>
                     <!-- Other cards here -->
                     <di class="card shadow mb-4">
-                        <div class="card-body p-4">
+                        <div class="card-body pt-5 pb-5">
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-uppercase font-weight-bold">Progress towards 100,000 Profits</p>
-                                        <h5 class="font-weight-bolder">
+                                        <h6 class="mt-3">
                                             <?= number_format($totalProfit, 2); ?> / 100,000
-                                        </h5>
+                                        </h6>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
@@ -72,14 +72,13 @@ $dailyProfit = $orderData['dailyProfit'];
 
             <div class="row mt-4">
                 <div class="card shadow">
-                    <div class="col-md-12 m-4">
+                    <div class="col-md-11.5 m-4">
                         <h5 class="mb-4">Order History</h5>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>Order ID</th>
                                     <th>Product ID</th>
-                                    <th>Price</th>
                                     <th>Total</th>
                                     <th>Order Date</th>
                                 </tr>
@@ -89,7 +88,6 @@ $dailyProfit = $orderData['dailyProfit'];
                                     <tr>
                                         <td><?= $order['id']; ?></td>
                                         <td><?= $order['prod_id']; ?></td>
-                                        <td>₱<?= number_format($order['price'], 2); ?></td>
                                         <td>₱<?= number_format($order['price'] * $order['prod_qty'], 2); ?></td>
                                         <td><?= date('d-m-Y H:i:s', strtotime($order['order_date'])); ?></td>
                                     </tr>
