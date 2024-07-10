@@ -101,12 +101,12 @@ include('middleware/authenticate.php');
                         <div class="col mt-3 p-2">
                             <div class="col-sm-12">
                                 <p><small>Card Number:</small></p>
-                                <input required type="text" id="cardNum" name="cardNum" class="form-control bg-transparent text-white">
+                                <input required type="text" id="cardNum" name="cardNum" id="cardNum" class="form-control bg-transparent text-white">
                             </div>
                         </div>
                         <div class="col-sm-12 mt-3 mb-3 p-2">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn bg-white checkOutBtn hidden" style="width:100%"><i class="fa fa-shopping-cart me-3"></i>Check Out</button>
+                                <button type="submit" class="btn bg-white checkOutBtn hidden" value="" style="width:100%"><i class="fa fa-shopping-cart me-3"></i>Check Out</button>
                             </div>
                         </div>
                     </form>

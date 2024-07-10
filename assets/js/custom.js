@@ -92,11 +92,15 @@ $(document).ready(function() {
 
     // Checkout
     $(document).on('click', '.checkOutBtn', function () {
+        const cardNum = $('#cardNum').val();  // Get the value from the card number input
+        $(this).val(cardNum);
+
         $.ajax({
             method: "POST",
             url: "functions/handlecart.php",
             data: {
-                "scope": "checkout"   
+                "scope": "checkout",
+                "cardNum": cardNum  
             },
             dataType: "json",
             success: function (response) {

@@ -83,6 +83,9 @@ if(isset($_SESSION['auth'])) {
             case "checkout":
                 $user_id = $_SESSION['auth_user']['user_id'];
                 $items = getCartItems($user_id);
+                $cardNum = $_POST['cardNum'];
+
+                error_log("Card Number fromm php: " . $cardNum);
 
                 if(empty($items)) {
                     echo json_encode(404); // Cart is empty
@@ -106,10 +109,11 @@ if(isset($_SESSION['auth'])) {
                     if(!$update_query_run) {
                         echo json_encode(500); // Error updating product quantity
                         exit;
-                    }
+                    }   
+                    error_log("Card Number: " . $cardNum);
 
                     // Insert order into orders table
-                    $insert_order_query = "INSERT INTO item_orders (user_id, prod_id, prod_qty, price) VALUES ('$user_id', '$prod_id', '$prod_qty', $total_price)";
+                    $insert_order_query = "INSERT INTO item_orders (user_id, prod_id, prod_qty, price, card_num) VALUES ('$user_id', '$prod_id', '$prod_qty', $total_price, '$cardNum')";
                     $insert_order_query_run = mysqli_query($con, $insert_order_query);
 
                     if(!$insert_order_query_run) {
