@@ -1,3 +1,9 @@
+<?php 
+if (!isset($hideNavbar)) {
+    $hideNavbar = false;
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
