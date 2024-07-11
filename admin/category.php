@@ -6,6 +6,7 @@ include('includes/header.php');
 
 <div class="container">
     <div class="row">
+        <div class="card mt-3">
         <div class="col-md-12">
             <div class="card-header">
                 <h4>Categories</h4>
@@ -54,6 +55,7 @@ include('includes/header.php');
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
     </div>
 </div>
