@@ -1,10 +1,10 @@
-<h1 align="center">StudyNook Hub</h1>
+<h1 align="center">📚 StudyNook Hub</h1>
 
 StudyNook Hub is a PHP-based e-commerce web application designed to provide a seamless shopping experience for users. It includes essential features like user authentication, product management, shopping cart functionality, and a secure backend database.
 
 ---
 
-<h2>Technologies Used</h2>
+<h2>🚀 Technologies Used</h2>
 <ul>
   <li><b>PHP:</b> Backend scripting language.</li>
   <li><b>MySQL:</b> Database for storing user and product data.</li>
@@ -18,7 +18,7 @@ StudyNook Hub is a PHP-based e-commerce web application designed to provide a se
 
 ---
 
-<h2>Setup Instructions</h2>
+<h2>⚙️ Setup Instructions</h2>
 
 <h3>Prerequisites</h3>
 <ul>
@@ -48,17 +48,17 @@ git clone https://github.com/Wavxr/StudyNook-Hub.git</code></pre>
 
 ---
 
-<h2>Usage</h2>
+<h2>💡 Usage</h2>
 <ol>
   <li>Register or log in as a user.</li>
   <li>Browse products and add them to your cart.</li>
-  <li>Proceed to the checkout process.</li>
+  <li>Proceed to the checkout process (if implemented).</li>
   <li>Admins can log in to manage products and categories.</li>
 </ol>
 
 ---
 
-<h2>Features</h2>
+<h2>✨ Features</h2>
 <ul>
   <li><b>User Authentication:</b> Secure user login and registration system.</li>
   <li><b>Product Catalog:</b> Display of products with categories and individual product views.</li>
@@ -69,5 +69,5 @@ git clone https://github.com/Wavxr/StudyNook-Hub.git</code></pre>
 
 ---
 
-<h2>License</h2>
+<h2>📜 License</h2>
 <p>This project is for educational purposes and is not licensed for commercial use. Feel free to fork and modify it for personal learning.</p>
