@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2024 at 04:48 PM
+-- Generation Time: Jan 22, 2025 at 11:24 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -86,25 +86,6 @@ CREATE TABLE `item_orders` (
   `order_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `item_orders`
---
-
-INSERT INTO `item_orders` (`id`, `prod_id`, `user_id`, `prod_qty`, `price`, `card_num`, `order_date`) VALUES
-(1, 1, 1, 1, 3700.00, '', '2024-07-03 02:00:00'),
-(2, 2, 2, 1, 4230.00, '', '2024-07-04 03:00:00'),
-(3, 3, 3, 1, 5200.00, '', '2024-07-05 04:00:00'),
-(4, 4, 4, 1, 6450.00, '', '2024-07-06 05:00:00'),
-(5, 5, 5, 1, 4300.00, '', '2024-07-07 06:00:00'),
-(6, 5, 5, 1, 9050.00, '', '2024-07-08 06:00:00'),
-(7, 5, 5, 1, 7400.00, '', '2024-07-09 06:00:00'),
-(180, 1, 2, 1, 2500.00, '', '2024-07-09 16:13:17'),
-(181, 8, 2, 1, 2600.00, '', '2024-07-09 16:47:57'),
-(182, 1, 2, 1, 2500.00, '', '2024-07-09 16:48:34'),
-(183, 1, 2, 1, 2500.00, '', '2024-07-09 16:50:37'),
-(220, 52, 2, 1, 2600.00, '1283712893', '2024-07-10 14:35:11'),
-(221, 54, 2, 1, 5100.00, '1283712893', '2024-07-10 14:35:11');
-
 -- --------------------------------------------------------
 
 --
@@ -147,7 +128,7 @@ INSERT INTO `products` (`id`, `category_id`, `name`, `slug`, `small_description`
 (9, 3, 'Sizzy', 'sizzy', 'Test responsive designs faster with this browser built for web developers', 'It’s almost funny that you’re trying to build a super fast website when your own browser is weighed down by 70 open tabs. (“Trust me, closing them would also slow me down.”)\r\n\r\nWith all your work spread across multiple devices, browsers, and conditions, you’re bound to make a mistake and give some bad actor the power to break your site.\r\n\r\nWish there was a browser created specifically for web development that let you access all your tools from one place?\r\n\r\nIntroducing Sizzy.', 3000.00, 2300.00, '1720535649.webp', 1, 0, 0, '', '', '', '2024-07-09 14:34:09', '2024-07-10 14:46:10'),
 (10, 1, 'test', 'test', 'test', 'test', 123.00, 123.00, '1720365572.webp', 0, 0, 1, 'test', 'tests', 'test', '2024-07-07 15:19:32', '2024-07-10 14:46:38'),
 (13, 1, 'Frank AI', 'frank-ai', 'Frank AI is a blazingly fast iOS and web app that lets you use the latest AI models from your pocket', 'Frank AI is a model aggregator for iOS that lets you use the latest AI models in your phone – for creating, working, or finding information.\r\n\r\nIt supports GPT-4 Turbo and comes with the first ever iOS GPT-4 Keyboard Extension.\r\n\r\nUsers love Frank because of his ease-of-use, speed, and context understanding - no matter what model you use.\r\n\r\nOur mission with Frank is making prompting and interacting with complex AI models easier for everyone, so everyone can get value from the powerful tools that come out every day.', 2800.00, 2500.00, '1720532249.webp', 1, 0, 0, '', '', '', '2024-07-09 13:37:29', '2024-07-10 14:46:10'),
-(14, 1, 'ZeroWork', 'zero-work', 'Automate browser activity like typing, clicking, and copy-pasting with AI-powered RPA', 'There’s nothing like spending your day scouring LinkedIn, sending cold DMs, and bantering with strangers. (“This is basically professional brain rot.”)\r\n\r\nBetween copy-pasting data, filling out forms, and managing social media activity, you’re trudging through grunt work every day.\r\n\r\nWhat if you could build code-free automations designed to tackle any menial workflow, without getting flagged for bot activity?', 2800.00, 2500.00, '1720532330.webp', 1, 0, 0, '', '', '', '2024-07-09 13:38:50', '2024-07-10 14:46:10'),
+(14, 1, 'ZeroWork', 'zero-work', 'Automate browser activity like typing, clicking, and copy-pasting with AI-powered RPA', 'There’s nothing like spending your day scouring LinkedIn, sending cold DMs, and bantering with strangers. (“This is basically professional brain rot.”)\r\n\r\nBetween copy-pasting data, filling out forms, and managing social media activity, you’re trudging through grunt work every day.\r\n\r\nWhat if you could build code-free automations designed to tackle any menial workflow, without getting flagged for bot activity?', 2800.00, 2500.00, '1720532330.webp', 0, 0, 0, '', '', '', '2024-07-09 13:38:50', '2025-01-22 10:15:49'),
 (15, 8, 'Ocoya', 'ocoya', 'Upgrade your content marketing strategy with an all-in-one AI-powered platform', 'It’s easy to lose track of all your social media accounts, especially when you’re juggling multiple brands. (“Please don’t tell me I accidentally posted my thirst trap to the corporate Instagram.”)\r\n\r\nAnd while there are plenty of tools out there to help you design and schedule posts, they take a ton of time and effort to master.\r\n\r\nWish you could ease the grunt work and manage all your content marketing in one place?\r\n\r\nIt’s possible with Ocoya.', 2800.00, 2500.00, '1720532382.webp', 1, 0, 0, '', '', '', '2024-07-09 13:39:42', '2024-07-09 14:02:27'),
 (16, 7, 'Databar', 'databar', 'Use this AI scraper and data enrichment platform to supercharge your CRM and automate prospecting', 'Nothing says bummer summer like spending all your time inside prowling LinkedIn for new customers. (“Sun’s out, 85 profile tabs out.”)\r\n\r\nWhile prospecting, qualifying leads, and updating your CRM is vital for sales, doing it all manually would take over your entire workday.\r\n\r\nWhat if there was a tool that helped you automate data enrichment with high-quality data from high-quality sources, sprinkled with AI and custom formulas?', 2800.00, 2500.00, '1720532431.webp', 1, 0, 0, '', '', '', '2024-07-09 13:40:31', '2024-07-09 14:02:40'),
 (17, 1, 'TidyCal', 'tidycal', 'Seamlessly manage your calendar and get more bookings using this powerful scheduling tool', 'Most calendar tools are weighed down by complicated features you’ll never need. (“I’m not sure what ‘round robin’ is but it sounds messy.”)\r\n\r\nWorst of all, you’re paying monthly subscription fees to access features you aren’t actually using.\r\n\r\nWish there was one simple tool that made it easy to book meetings, get paid, and manage your calendar?\r\n\r\nMeet TidyCal.', 2800.00, 2500.00, '1720532503.webp', 1, 0, 0, '', '', '', '2024-07-09 13:41:43', '2024-07-10 14:46:10'),
@@ -156,7 +137,7 @@ INSERT INTO `products` (`id`, `category_id`, `name`, `slug`, `small_description`
 (20, 7, 'AITable.ai', 'aitable-ai', 'Build your own spreadsheet-style databases for better project management and CRMs', 'When you’re managing big projects, you need tools that have a lot of wiggle room. \r\n\r\nBut because so many tools on the market are stubbornly inflexible, you end up managing projects and customer data with patchwork solutions. (“This platform is great...for single-tasking.”)\r\n\r\nWish there was one platform that uses AI to build the kind of databases you need to support all your tasks and customer relationships?', 2800.00, 2300.00, '1720533095.webp', 1, 0, 0, '', '', '', '2024-07-09 13:51:35', '2024-07-10 14:46:10'),
 (21, 8, 'Junia AI', 'junia-ai', 'Generate high-ranking content that drives more traffic to your site with this powerful AI writing tool', 'Even if you are crafting blog posts day in and day out, search engines can still pass you by. (“Pick me, choose me, list me.”)\r\n\r\nWith so many different SEO tips and tricks out there, it’s impossible to know what’s working, what isn’t, and when you need to pivot your content strategy.\r\n\r\nIf only there was an AI-powered writing tool that could help you whip up content that drives organic traffic to your site.\r\n\r\nMeet Junia AI.', 3000.00, 2600.00, '1720533153.webp', 1, 0, 0, '', '', '', '2024-07-09 13:52:33', '2024-07-09 13:52:33'),
 (22, 1, 'Pickaxe', 'pickaxe', 'Build, deploy, and monetize AI tools without writing a line of code', 'Nowadays, it seems like everyone and their mom is using some kind of AI tool for work. (“So she can use AI, but she can’t figure out FaceTime?”)\r\n\r\nThis would be the perfect time to launch your own AI tool, but building it from scratch is a nightmare—and monetizing it is even worse.\r\n\r\nIf only there was a platform that let you build, deploy, and monetize your own AI tool without touching a line of code.\r\n\r\nSay hello to Pickaxe.', 3000.00, 2300.00, '1720533215.webp', 1, 0, 0, '', '', '', '2024-07-09 13:53:35', '2024-07-10 14:46:10'),
-(23, 4, 'Fable', 'fable', 'Create interactive demos and step-by-step guides to drive more conversions', 'Explaining how your product works to prospects can feel like a bad game of Pictionary. (“Let me paint you a picture. Oops, I messed up.”)\r\n\r\nTruth is, lengthy support documents and random product screenshots simply can’t showcase what sets your product apart.\r\n\r\nYou need a tool that makes it easy to create interactive demos that are tailored to each customer.\r\n\r\nIntroducing Fable.', 2850.00, 2500.00, '1720533267.webp', 1, 0, 0, '', '', '', '2024-07-09 13:54:27', '2024-07-10 14:46:10'),
+(23, 4, 'Fable', 'fable', 'Create interactive demos and step-by-step guides to drive more conversions', 'Explaining how your product works to prospects can feel like a bad game of Pictionary. (“Let me paint you a picture. Oops, I messed up.”)\r\n\r\nTruth is, lengthy support documents and random product screenshots simply can’t showcase what sets your product apart.\r\n\r\nYou need a tool that makes it easy to create interactive demos that are tailored to each customer.\r\n\r\nIntroducing Fable.', 2850.00, 2500.00, '1720533267.webp', 0, 0, 0, '', '', '', '2024-07-09 13:54:27', '2025-01-22 10:16:59'),
 (24, 3, 'U-xer', 'u-xer', 'Automate repetitive tasks with a tool combining computer vision, LLM, and RPA software\r\n', 'It’s hard to think big picture about your business when you’re drowning in repetitive tasks and busy work. (“Sorry, can’t talk now. Gotta sort my files into folders. Yes, again.”)\r\n\r\nAnd since you’re not a developer, figuring out how to automate simple actions like clicking and typing is way beyond your skill level.\r\n\r\nWish there was a user-friendly automation builder that combined computer vision, LLM, and RPA software to automate any task in a snap?\r\n\r\nSay hello to U-xer.', 2850.00, 2600.00, '1720533405.webp', 1, 0, 0, '', '', '', '2024-07-09 13:56:45', '2024-07-10 14:46:10'),
 (25, 2, 'Merlin', 'merlin', 'Use this 26-in-one Chrome extension to research, summarize, and write content from your browser', 'It’s hard to believe AI tools help you work smarter when you’re still stuck switching between tabs to get things done. (“Just call me an AI assistant juggler.”)\r\n\r\nWith so many AI models and features on the market, you’re using way too much tech to research and generate different types of content.\r\n\r\nWhat if there was a Chrome extension packed with all the AI models you need to speed up your research and content creation process?\r\n\r\nSay hello to Merlin.', 2650.00, 1500.00, '1720534124.webp', 1, 0, 0, '', '', '', '2024-07-09 14:08:44', '2024-07-10 14:46:10'),
 (26, 2, 'Unifire.ai', 'unifire', 'Transform your content into 30+ formats in minutes with this AI content repurposing platform', 'Constantly coming up with new content ideas can feel like you’re stuck reinventing the wheel. (“My bad for getting it right the first time.”)\r\n\r\nSince you’re only using each piece of content once, all the hours you’re pouring into strategizing and perfecting posts don’t add up to much.\r\n\r\nWish there was a platform that let you convert your best work into over 30 content assets that you can reuse on multiple platforms?\r\n\r\nSay hello to Unifire.ai.', 5300.00, 2400.00, '1720534223.webp', 1, 0, 0, '', '', '', '2024-07-09 14:10:23', '2024-07-10 14:46:10'),
@@ -208,9 +189,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `role_as`, `created_at`) VALUES
-(1, 'John Waver Aguilar', 'johnveraguilar25@gmail.com', 2147483647, '123', 1, '2024-06-15 15:48:07'),
-(2, 'Pedro', 'johnveraguilar2004@gmail.com', 2147483647, '123', 0, '2024-06-15 16:03:42'),
-(3, 'John Doe', 'john@example.com', 0, '123', 0, '2024-07-09 12:53:54'),
+(3, 'John Doe', 'john@example.com', 0, '123', 1, '2024-07-09 12:53:54'),
 (4, 'Jane Smith', 'jane@example.com', 0, '123', 0, '2024-07-09 12:53:54'),
 (5, 'Alice Johnson', 'alice@example.com', 0, '123', 0, '2024-07-09 12:53:54');
 
@@ -258,7 +237,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -270,7 +249,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `item_orders`
 --
 ALTER TABLE `item_orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=222;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=224;
 
 --
 -- AUTO_INCREMENT for table `products`
