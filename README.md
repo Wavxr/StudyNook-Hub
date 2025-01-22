@@ -13,8 +13,10 @@ StudyNook Hub is a PHP-based e-commerce web application designed to provide a se
   <li><b>JavaScript:</b> For dynamic functionality on the frontend.</li>
   <li><b>AJAX:</b> For asynchronous data loading.</li>
   <li><b>SweetAlert:</b> For elegant alert messages.</li>
+  <li><b>Chart.js:</b> For creating interactive and customizable charts.</li>
   <li><b>XAMPP:</b> Local development environment.</li>
 </ul>
+
 
 ---
 
